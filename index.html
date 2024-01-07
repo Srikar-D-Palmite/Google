@@ -4,7 +4,8 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="styles.css" />
-        <script src="script.js"></script>
+        <script src="script.js" defer></script>
+        <link rel="icon" type="image/x-icon" href="favicon.ico">
         <title>Google</title>
     </head>
     <body class="flex flex-col">
@@ -12,9 +13,9 @@
             <div class="flex logo">
                 <img src="googlelogo.png" alt="Google" />
             </div>
-            <div class="flex flex-col" style="align-items: center; width: 100%">
-                <div class="search-bar flex flex-row">
-                    <div class="small-icon center">
+            <div class="search-area flex flex-col">
+                <div class="search-bar search-bar-size flex flex-row">
+                    <div class="search-icon small-icon center">
                         <svg
                             focusable="false"
                             xmlns="http://www.w3.org/2000/svg"
@@ -78,6 +79,9 @@
                         </svg>
                     </div>
                 </div>
+                <div class="dropdown search-bar-size">
+                    hello
+                </div>
             </div>
             <div class="flex flex-row buttons">
                 <button onclick="search()">Google Search</button>
@@ -88,6 +92,7 @@
             <div class="bottom-bar-sections">
                 <div class="bottom-bar-items">
                     <div class="bottom-bar-item">About</div>
+                    <div class="bottom-bar-item">Advertising</div>
                     <div class="bottom-bar-item">How Search works</div>
                 </div>
                 <div class="bottom-bar-items">
